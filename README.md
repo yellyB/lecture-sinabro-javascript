@@ -102,3 +102,20 @@
 - 강좌 추천: Wes Bos 의 강의. (wesbos.com/courses)
 
 <br/><br/><br/>
+
+# 05. vite 조금 더 뜯어보기
+
+**[vite+react 프로젝트 생성]**
+
+- build 한 다음 dist 폴더에 있는 빌드 파일 보면 알아볼 수가 없음. → **build.minify** 옵션 끄기 ⇒ 원본 그대로 빌드됨
+- 빌드된 파일 보면 어떤식으로 번들러가 빌드파일 만들어 주는지 알 수 있음(jsx변환, env 변수 변환)
+
+### **vite 장점: 빠르다**
+
+- 기존 번들러와 다르게 vite 같은 Native ESM based dev server 는:
+  어떤 경로로 들어가는 순.간. 그 컴포넌트에서 사용하는 것들만 추려서 서빙해줌 ⇒ 빨라짐
+- HMR 도 다른 번들러보다 최소한만 빌드하기 때문에 빠르다.
+  ㄴ> 확인하는 방법: Network 탭에서 확인 가능. 작은 부분만 수정한 뒤 확인해보면 파일 딱 하나만 다시 불러올거임
+- 왜 production 에서는 index.html 파일 딱 하나로 빌드할까? vite 공식 문서의 Why Vite 메뉴 중 “Why Bundle for Production” 파트 읽어보기
+
+<br/><br/><br/>
