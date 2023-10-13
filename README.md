@@ -119,3 +119,17 @@
 - 왜 production 에서는 index.html 파일 딱 하나로 빌드할까? vite 공식 문서의 Why Vite 메뉴 중 “Why Bundle for Production” 파트 읽어보기
 
 <br/><br/><br/>
+
+# 06. 자바스크립트 디버깅
+
+- **break point** → 자바 혹은 xcode 쓰면 사용하는게 익숙하겠지만, JS같은 경우는 빌드되고 그게 브라우저에 올라가기 때문에 단절되는 부분 있어서 어려움
+- 에디터에 설정(launch.json) 안해놓으면 break point 브라우저에서 확인 가능. Sources 탭에서 break point 걸고 확인 할 수 있다.
+
+![ddddd](https://github.com/yellyB/sinabro-javascript/assets/50893303/4a5c1723-396f-44c2-ab6c-ce855a4dfb6a)
+
+
+- source map: 위 이미지에 보면 App.tsx 인데, 브라우저는 자바스크립트 밖에 이해하지 못하는데? 이때 소스맵이 원본(tsx) ↔ 빌드output(JS) 연결해줌.
+
+
+<br/><br/><br/>
+
